@@ -1,0 +1,57 @@
+.properties-page {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.properties-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.properties-header h1 {
+  font-size: 22px;
+  margin: 0;
+}
+
+.logout-button {
+  padding: 8px 16px;
+  border: 1px solid #999;
+  border-radius: 4px;
+  background: #fff;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.property-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+.property-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.property-card h2 {
+  margin: 0 0 8px;
+  font-size: 16px;
+}
+
+.property-card .rent {
+  font-size: 18px;
+  font-weight: bold;
+  color: #2f6fed;
+  margin: 0 0 4px;
+}
+
+.property-card .area {
+  margin: 0;
+  color: #666;
+  font-size: 14px;
+}
