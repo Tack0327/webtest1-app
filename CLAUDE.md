@@ -78,3 +78,8 @@ https://Tack0327.github.io/task-board/
 ## GitHubリポジトリ
 
 https://github.com/Tack0327/task-board.git
+
+## デプロイ情報
+
+- 本番URL：https://webtest1-3gxh71h8i-tack0327.vercel.app/
+- Supabaseプロジェクト名：realestate-app
