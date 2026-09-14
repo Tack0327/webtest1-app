@@ -27,7 +27,8 @@ export default function SignupPage() {
     setSubmitting(false)
 
     if (signUpError) {
-      setError('会員登録に失敗しました。入力内容を確認してください。')
+      console.error('会員登録失敗:', signUpError)
+      setError(`会員登録に失敗しました（${signUpError.message}）`)
       return
     }
 

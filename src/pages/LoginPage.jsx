@@ -26,7 +26,9 @@ export default function LoginPage() {
     setSubmitting(false)
 
     if (signInError) {
-      setError('ログインに失敗しました。メールアドレスとパスワードを確認してください。')
+      // 実際のエラー内容をコンソールにも出力し、原因調査しやすくする
+      console.error('ログイン失敗:', signInError)
+      setError(`ログインに失敗しました（${signInError.message}）`)
       return
     }
 
