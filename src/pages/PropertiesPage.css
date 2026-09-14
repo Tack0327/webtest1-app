@@ -16,6 +16,12 @@
   margin: 0;
 }
 
+.header-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.new-button,
 .logout-button {
   padding: 8px 16px;
   border: 1px solid #999;
@@ -23,6 +29,68 @@
   background: #fff;
   cursor: pointer;
   font-size: 14px;
+}
+
+.new-button {
+  border-color: #2f6fed;
+  color: #2f6fed;
+}
+
+.error-message {
+  color: #d33;
+  font-size: 14px;
+}
+
+.property-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 360px;
+  margin-bottom: 24px;
+  padding: 16px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.property-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 14px;
+}
+
+.property-form input {
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.property-form-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.property-form-actions button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #2f6fed;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.property-form-actions button:disabled {
+  background-color: #9ab5f2;
+  cursor: not-allowed;
+}
+
+.property-form-actions .cancel-button {
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #999;
 }
 
 .property-grid {
@@ -51,7 +119,26 @@
 }
 
 .property-card .area {
-  margin: 0;
+  margin: 0 0 12px;
   color: #666;
   font-size: 14px;
+}
+
+.card-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.card-actions button {
+  padding: 6px 12px;
+  border: 1px solid #999;
+  border-radius: 4px;
+  background: #fff;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.card-actions .delete-button {
+  border-color: #d33;
+  color: #d33;
 }
