@@ -24,20 +24,33 @@
 .new-button,
 .logout-button {
   padding: 8px 16px;
-  border: 1px solid #999;
   border-radius: 4px;
-  background: #fff;
   cursor: pointer;
   font-size: 14px;
 }
 
 .new-button {
-  border-color: #2f6fed;
-  color: #2f6fed;
+  border: none;
+  background-color: #111;
+  color: #fff;
+}
+
+.new-button:hover {
+  background-color: #333;
+}
+
+.logout-button {
+  border: 1px solid #111;
+  background: #fff;
+  color: #111;
+}
+
+.logout-button:hover {
+  background-color: #f0f0f0;
 }
 
 .error-message {
-  color: #d33;
+  color: #e03131;
   font-size: 14px;
 }
 
@@ -76,21 +89,29 @@
   padding: 8px 16px;
   border: none;
   border-radius: 4px;
-  background-color: #2f6fed;
+  background-color: #111;
   color: #fff;
   font-size: 14px;
   cursor: pointer;
 }
 
+.property-form-actions button:hover:not(:disabled) {
+  background-color: #333;
+}
+
 .property-form-actions button:disabled {
-  background-color: #9ab5f2;
+  background-color: #999;
   cursor: not-allowed;
 }
 
 .property-form-actions .cancel-button {
   background-color: #fff;
-  color: #333;
-  border: 1px solid #999;
+  color: #111;
+  border: 1px solid #111;
+}
+
+.property-form-actions .cancel-button:hover {
+  background-color: #f0f0f0;
 }
 
 .property-grid {
@@ -114,7 +135,7 @@
 .property-card .rent {
   font-size: 18px;
   font-weight: bold;
-  color: #2f6fed;
+  color: #111;
   margin: 0 0 4px;
 }
 
@@ -131,14 +152,23 @@
 
 .card-actions button {
   padding: 6px 12px;
-  border: 1px solid #999;
+  border: 1px solid #111;
   border-radius: 4px;
   background: #fff;
+  color: #111;
   cursor: pointer;
   font-size: 13px;
 }
 
+.card-actions button:hover {
+  background-color: #f0f0f0;
+}
+
 .card-actions .delete-button {
-  border-color: #d33;
-  color: #d33;
+  border-color: #e03131;
+  color: #e03131;
+}
+
+.card-actions .delete-button:hover {
+  background-color: #fdeaea;
 }
